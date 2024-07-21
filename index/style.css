@@ -17,6 +17,15 @@ h1 {
   color: #9b59b6;
   margin-bottom: 20px;
 }
+.sec {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
 
 form {
   background-color: #ffffff;

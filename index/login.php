@@ -1,5 +1,8 @@
 <?php
 session_start();
+if(isset($_SESSION["login"])){
+    header("Location:admin.php");
+}
 $conn = mysqli_connect('localhost', 'root', 'Yahya123#', 'rfid_scanner');
 if(isset($_POST["login"])){
     $username = $_POST["username"];
