@@ -1,4 +1,5 @@
 <?php
+session_start();
 $conn = mysqli_connect('localhost', 'root', 'Yahya123#', 'rfid_scanner');
 if(isset($_POST["login"])){
     $username = $_POST["username"];
@@ -8,6 +9,7 @@ if(isset($_POST["login"])){
     if(mysqli_num_rows($ress)===1){
         $row = mysqli_fetch_assoc($ress);
         if(password_verify($password, $row["password"])){
+            $_SESSION["login"] = true;
             header("Location:admin.php");
             exit;
         }
@@ -44,6 +46,7 @@ if(isset($_POST["login"])){
             <li>
                 <button type="submit" name="login">Login</button>
             </li>
+            <a href="register.php">Register</a>
         </ul>
     </form>
 </body>

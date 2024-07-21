@@ -11,6 +11,7 @@ body {
   color: red;
   font-style: italic;
 }
+
 h1 {
   text-align: center;
   color: #9b59b6;
@@ -70,19 +71,6 @@ button {
   cursor: pointer;
   font-size: 16px;
   transition: background-color 0.3s ease;
-}
-a {
-  display: inline-block;
-  padding: 12px 20px;
-  background-color: #9b59b6;
-  color: white;
-  text-decoration: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-a:hover {
-  background-color: #8e44ad;
 }
 
 button:hover {

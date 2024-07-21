@@ -14,7 +14,7 @@
         <h1>Admin</h1>
         <ul>
             <li>
-                <a href="login.php">Login</a>
+                <a href="login.php" class="index">Login</a>
             </li>
             <li>
                 <a href="register.php">Register</a>
